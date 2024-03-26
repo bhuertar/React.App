@@ -11,24 +11,26 @@ function App() {
   }
 
   const featuredPup = puppies.find((pup)=> pup.id === featPupId)
-  console.log(featuredPup)
+  
 
   return (
     <div className="App">
       {puppies.map((puppy) => {
         return (
-          <p onClick={()=>{ setFeatPupId(puppy.id)}} key={puppy.id}>
+          <p className="List" onClick={()=>{ setFeatPupId(puppy.id)}} key={puppy.id}>
             {puppy.name}
           </p>
           
         );
       })}
       <p>{ featPupId && (
-        <div>
+        <div className="Details">
           <h2>{featuredPup.name}</h2>
-          <ul>
+          <ul className="Personal">
             <li>Age: {featuredPup.age}</li>
             <li>Email: {featuredPup.email}</li>
+            <li>ID: {featuredPup.id}</li>
+            <li>Cute? {featuredPup.isCute.toString()}</li>
           </ul>
         </div>
       )}</p>

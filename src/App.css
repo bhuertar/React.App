@@ -1,0 +1,24 @@
+.List {
+  /* background-color: #B7F4FD; */
+  color: Black;
+  display: inline-block;
+  font-size: 19px;
+  font-style: italic;
+  font-weight: bold;
+  padding: auto;
+  margin: auto;
+  padding-left: 1.8%;
+  height: 40px;
+
+}
+
+.Details {
+  text-align: center;
+  color: white;
+  -webkit-text-stroke: 1.1px black;
+}
+
+.Personal {
+  list-style-type: none;
+  font-size: 25px;;
+}
